@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Can change attributes based on id</title>
+</head>
+
+<body>
+  <template id="template">
+    <input id="input-id" />
+  </template>
+  <div id="target"></div>
+</body>
+
+<script src="./index.js"></script>
+
+<script>
+  templater("template", "target", "email", {
+    "input-id": {
+      placeholder: "john@mail.com",
+      type: "email",
+    }
+  })
+  templater("template", "target", "password", {
+    "input-id": {
+      type: "password",
+    }
+  })
+</script>
+
+</html>
