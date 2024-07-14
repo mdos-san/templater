@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "live-server": "live-server",
     "test": "playwright test"
   },
   "author": "mdos-san",
