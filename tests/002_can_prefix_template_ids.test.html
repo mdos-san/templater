@@ -14,9 +14,9 @@
   <div id="target"></div>
 </body>
 
-<script src="/src/index.js"></script>
+<script type="module">
+  import { templater } from "/esm/index.js"
 
-<script>
   templater("template", "target", "email")
   templater("template", "target", "password")
 </script>
